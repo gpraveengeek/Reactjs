@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function readAndUpdateData(){
+            let fnum = document.getElementById("n1").value;
+            let snum = document.getElementById("n2").value;
+            let sum = eval(fnum+snum);
+            document.getElementById("n3").innerHTML=cosole.log(sum);
+        }
+    </script>
+</head>
+
+<body>
+    Enter 1st Number: <input type="text" name="fnum" id="n1"><br>
+    Enter 2nd Number: <input type="text" name="snum" id="n2"><br>
+    Result: <input type="text" name="sum" id="n3"/><br>
+    <br>
+    <input type="button" value="ADD" onclick="readAndUpdateData()"/>
+    <!-- <input type="button" value="SUB" onclick="Addition()"/> -->
+</body>
+
+<!-- <script type="text/javascript" src="add.js"></script> -->
+
+</html>

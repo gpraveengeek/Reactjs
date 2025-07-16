@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>USER DEFINED FUNCTIONS</h1>
+<script type="text/JavaScript">
+    // function no passing parameters & no return type----------
+    function info() {
+        alert("welcome user defined function")
+    }
+    // info();--------------call in from head <script>
+    // function passing parameters & no return type-----------
+    function addNumber(a,b) {
+        var sum=a+b;
+        alert("sum of two numbers "+sum)
+    }
+    // function passing parameters & return type-------------
+    function checkLoginDetails(email,password) {
+        if(email=="ad@gmail.com" && password=="ad@123"){
+            return"successfully login"
+        }else{
+            return"failed try once again"
+        }
+        
+    }
+</script>
+<body>
+    <script type="text/JavaScript">
+        // info()--------------call in from body <script>--------------
+        info()
+        // ------------------------------------------------------------
+        // function passing parameters & no return type-----------
+        addNumber(100,200);
+        addNumber(1,2);
+        addNumber(11,22);
+        // ------------------------------------------------------------
+        // function passing parameters & return type-------------
+        var result1=checkLoginDetails("ad@gmail.com","ad@123")
+        var result2=checkLoginDetails("ad@gmail.com","ad@111")
+        alert(result1)
+        alert(result2)
+    </script>
+</body>
+</html>

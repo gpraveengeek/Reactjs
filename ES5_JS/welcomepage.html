@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to html web page</h1>
+    <script>
+        document.write("welcome world")
+        document.write("<p>welcome</p>")
+        document.write("<font color = 'red'>WELCOME</font>")
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication Table</title>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let baseNumber = 7; // Change this number as needed
+        let result = `<table border="1"><tr><th>Multiplication Table for ${baseNumber}</th></tr>`;
+        for (let i = 1; i <= 10; i++) {
+            result += `<tr><td>${baseNumber} x ${i} = ${baseNumber * i}</td></tr>`;
+        }
+        result += "</table>";
+        document.body.innerHTML = result;
+    });
+    </script>
+</head>
+<body>
+</body>
+</html>

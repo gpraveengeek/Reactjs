@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.blinking-text {
+  animation: blink 1s infinite;
+  color: white;
+  text-align: center;
+  margin-top: 15%;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+body{
+    background-image: url("pic.png");
+}
+h1{
+    color: white;
+    font-weight: 500;
+}
+button{
+    text-align: center;
+    padding: 10px 20%;
+    margin-left: 28%;
+    font-weight: 900;
+    border-radius: 30px;
+    align-items: center;
+    background-color: yellow;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.button:active{
+    background-color: blueviolet;
+    transform: scale(1s);
+}
+</style>
+<body class="body">
+    <marquee><h1><b>Your Order has been Successfully Placed.....</b></h1></marquee>
+    <h2 class="blinking-text"><b>THANK YOU...</b></h2>
+    <button class="button" onclick="window.location.href='loginpage.html'">Login</button>
+</body>
+</html>

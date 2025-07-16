@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31/05/2025 Day-7 Class</title>
+</head>
+<h1>CREATING AN APP USING OPERATORS,STATEMENTS,LOOPING,FUNCTIONS</h1>
+<body>
+    <script type="text/JavaScript">
+    var x,y,add,sub,mul,div,per;
+    var con;
+    do{
+        alert("1:ADD 2:SUB 3:MUL 4:DIV 5:PER")
+        var choice = eval(prompt("Enter your choice"))
+        switch(choice){
+            case 1: alert("Welcome to Addition Block")
+                x=eval(prompt("Enter the value of x"))
+                y=eval(prompt("Enter the value of y"))
+                add=x+y;
+                alert("ADD "+add)
+                break;
+            case 2: alert("Welcome to Subtraction Block")
+                x=eval(prompt("Enter the value of x"))
+                y=eval(prompt("Enter the value of y"))
+                sub=x-y;
+                alert("SUB "+sub)
+                break;
+            case 3: alert("Welcome to Multiplication Block")
+                x=eval(prompt("Enter the value of x"))
+                y=eval(prompt("Enter the value of y"))
+                mul=x*y;
+                alert("MUL "+mul)
+                break;
+            case 4: alert("Welcome to Division Block")
+                x=eval(prompt("Enter the value of x"))
+                y=eval(prompt("Enter the value of y"))
+                div=x/y;
+                alert("DIV "+div)
+                break;
+            case 5: alert("Welcome to Percentage Block")
+                x=eval(prompt("Enter the value of x"))
+                y=eval(prompt("Enter the value of y"))
+                per=(y/x)*100;
+                alert("PER "+per)
+                break;
+            default:alert("Wrong Choice")
+                break;
+        }
+        con=confirm("Do you want to continue?")
+    }while(con);
+    alert("Thank You")
+    </script>
+</body>
+</html>

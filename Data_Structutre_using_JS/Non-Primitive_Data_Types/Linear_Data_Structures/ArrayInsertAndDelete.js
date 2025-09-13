@@ -1,0 +1,23 @@
+let num1 = []
+console.log(num1)
+num1.push(100)
+num1.push(200)
+num1.push(300)
+num1.unshift(400)
+num1.unshift(500)
+console.log(num1)
+num1.pop(num1)
+num1.shift(num1)
+console.log(num1)
+
+let num2=[1,2,3,4,5,6,7,8,9,10]
+console.log("----------------------")
+console.log(num2)
+// num2.splice(3,1)
+// num2.splice(3,4)
+// num2.splice(3,0,100)
+// num2.splice(3,0,100,200,300)
+num2.splice(4,1,500)
+num2.splice(3,1,400)
+num2.splice(3,1)
+console.log(num2)

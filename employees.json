@@ -1,0 +1,17 @@
+{
+  "employees": [
+    {
+      "id": "92dd",
+      "name": "praveen",
+      "department": "finance",
+      "emailid": "",
+      "email": "praveen@gmail.com"
+    },
+    {
+      "id": "3fd2",
+      "name": "Raj",
+      "department": "finance",
+      "emailid": "pr@gmail.com"
+    }
+  ]
+}
